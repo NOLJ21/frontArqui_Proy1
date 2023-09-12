@@ -1,0 +1,23 @@
+<p>users works!</p>
+
+<a routerLink="/posts">Ir a posts</a>
+
+<h4>Tabla Usuarios</h4>
+<table>
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Telefono</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.id }}</td>
+            <td>{{ user.name}}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.phone }}</td>
+        </tr>
+    </tbody>
+</table>
